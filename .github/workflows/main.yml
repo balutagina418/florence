@@ -74,10 +74,3 @@ jobs:
       # Run main script
       - name: 🐍 Run flo.py (debug mode)
         run: python flo.py --debug --chrome --xvfb --screenshot
-
-      # Upload screenshots
-      - name: 📤 Upload screenshots
-        uses: actions/upload-artifact@v4
-        with:
-          name: seleniumbase-screenshots
-          path: ./latest_logs/
