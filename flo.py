@@ -19,7 +19,7 @@ while True:
     with SB(uc=True, test=True,locale="en") as florence:
         rnd = random.randint(450,900)
         florence.uc_open_with_reconnect(url, 5)
-        florence.sleep(10)
+        florence.sleep(15)
         if florence.is_element_present("#live-channel-stream-information"):
         
             if florence.is_element_present('button:contains("Accept")'):
